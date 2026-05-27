@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.meta": true,
+    "**/*.mate": true,
+    "library/": true,
+    "local/": true,
+    "temp/": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "build/": true,
+    "library/": true,
+    "local/": true,
+    "temp/": true,
+    "**/*.meta": true,
+    "**/*.mate": true
+  }
+}
