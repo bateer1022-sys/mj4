@@ -1,0 +1,1690 @@
+{
+  "projectPath": "/Users/jiayou/mjPlay",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "5c4ba11a-2681-4e50-8838-7329d14dd494": {
+      "assetMtime": 1779710650083,
+      "metaMtime": 1779787896196
+    },
+    "02dffdc6-0bf6-4401-a1d9-2fe33273aa73": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896276
+    },
+    "16688d5f-4e34-4e42-b77d-e8eee70851f6": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896276
+    },
+    "065017b3-7f8f-4661-b42b-c385504ad9af": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896273
+    },
+    "e247fe1c-7300-4de5-b4f8-8f4f0dc6846b": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896273
+    },
+    "0b652108-e3bc-4656-b851-c6a4fb262e42": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896246
+    },
+    "0f7c1d32-af18-4e8e-86a5-157efd5872c6": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896246
+    },
+    "0d669316-5b65-4535-a6cc-2e804c5c8a27": {
+      "assetMtime": 1779692056661,
+      "metaMtime": 1779787896234
+    },
+    "fd35fc7a-cf2b-4931-8c9e-f088371eba62": {
+      "assetMtime": 1779692056661,
+      "metaMtime": 1779787896234
+    },
+    "149d397c-ac38-4a7c-87a0-a1994b7cd772": {
+      "assetMtime": 1779442850392,
+      "metaMtime": 1779787896190
+    },
+    "8ac9127c-13b8-428e-b59b-5071c1bbe1d1": {
+      "assetMtime": 1779442850392,
+      "metaMtime": 1779787896190
+    },
+    "269dad3d-e0bd-4534-b3b5-96bb583d3c4f": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896263
+    },
+    "9f025bd6-054d-4d34-8e9d-5e8aa83f0881": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896263
+    },
+    "2801a70f-bdb7-4bf7-9e59-e768a6933c3d": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896283
+    },
+    "c5da389e-b6fa-4ba1-b02a-6d9770e4cefb": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896283
+    },
+    "28a47b26-b98a-4d47-80dc-5ce8d78e5a3a": {
+      "assetMtime": 1779696428164,
+      "metaMtime": 1779787896202
+    },
+    "4649cc68-a4b2-4a70-ae8a-65d8dc1e4dd5": {
+      "assetMtime": 1779696428164,
+      "metaMtime": 1779787896202
+    },
+    "29b4a21c-54b4-465f-b6d2-c4eca64721f8": {
+      "assetMtime": 1779349767183,
+      "metaMtime": 1779787896195
+    },
+    "bc36cded-504f-43ab-b264-905315ae96a6": {
+      "assetMtime": 1779349767183,
+      "metaMtime": 1779787896195
+    },
+    "2f4c5ac2-6f68-4945-b0b0-b2bac740badd": {
+      "assetMtime": 1779693671274,
+      "metaMtime": 1779787896194
+    },
+    "68f6df77-286f-4a8c-a2ef-277a75ca9f70": {
+      "assetMtime": 1779693671274,
+      "metaMtime": 1779787896194
+    },
+    "31db8231-f463-44ba-822e-9e0e17fafa1d": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896274
+    },
+    "bfb49aad-09d7-458f-a542-b1dda1ee2db1": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896274
+    },
+    "39ba6566-0a18-42b1-8602-384d307155c3": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896265
+    },
+    "63734648-c275-4346-8bce-58e458a2b2fb": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896265
+    },
+    "3c8a8f57-1801-4ee2-956b-63f21998d091": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896214
+    },
+    "11cc7359-e4d3-43fd-8f92-0eab905ad1e8": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896214
+    },
+    "3ddfdb55-8b3d-41b2-9845-96a8433d430a": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896256
+    },
+    "0911aeed-114d-462d-95ad-eb0cb8d33175": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896256
+    },
+    "3e0cd3ab-8895-4c96-93fe-98b23bc3d0de": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896264
+    },
+    "2ddb13c8-3eb5-4ad3-8332-8e46d4819b67": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896264
+    },
+    "424167fe-89b6-425f-936e-ae21e681ccf1": {
+      "assetMtime": 1779443725132,
+      "metaMtime": 1779787896189
+    },
+    "6fa1d13b-1d45-4881-b027-97e68b7ae068": {
+      "assetMtime": 1779443725132,
+      "metaMtime": 1779787896189
+    },
+    "4a642819-ef5b-426f-b8e4-2f301a1d8c54": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896278
+    },
+    "21d5677a-6cc9-40f6-8678-92db44055d99": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896278
+    },
+    "4d2e4f57-7a93-4b25-80b0-f5dcb11885ef": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896276
+    },
+    "39de6741-bd2d-4d18-b270-9882ec4c1b1a": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896276
+    },
+    "5262d56c-799f-4481-8701-329abdf03e82": {
+      "assetMtime": 1779709027426,
+      "metaMtime": 1779787896236
+    },
+    "34f1e239-ca7c-40ff-b29d-a8aec1f56320": {
+      "assetMtime": 1779709027426,
+      "metaMtime": 1779787896236
+    },
+    "5ef843db-4a38-4d00-b61c-f54cfab2fb00": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896249
+    },
+    "15487999-7347-4d20-9db9-526120208a94": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896249
+    },
+    "6104edc3-4c18-498b-a3b1-8496192ec602": {
+      "assetMtime": 1779442850392,
+      "metaMtime": 1779787896204
+    },
+    "d3e71e39-89cd-4195-9b3d-9381851e77de": {
+      "assetMtime": 1779442850392,
+      "metaMtime": 1779787896204
+    },
+    "61ba8138-a83d-4195-a5c3-7a07ee4c8641": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896283
+    },
+    "e43e219b-71b5-49b3-83d4-f721fc5e8522": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896283
+    },
+    "6606220a-ac93-4c17-90f6-52b86024b2be": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896262
+    },
+    "b8db4ac3-59ba-4051-9457-6896195a6954": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896262
+    },
+    "70a54775-80c4-4812-acc6-05330cda4185": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896257
+    },
+    "ac5164ec-903d-45b3-af4e-7d3d97e7306d": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896257
+    },
+    "72dcd908-1457-451d-b240-f2b37d550efc": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896245
+    },
+    "1c45355e-ef85-4bad-9951-f4103ef0fd75": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896245
+    },
+    "74553dd3-190f-4a99-a201-21e593e50520": {
+      "assetMtime": 1779712357340,
+      "metaMtime": 1779787896237
+    },
+    "e6c3e443-0966-457d-af0e-f78634a5595d": {
+      "assetMtime": 1779712357340,
+      "metaMtime": 1779787896237
+    },
+    "76797aca-d60a-432d-9786-dfaaf1c7d289": {
+      "assetMtime": 1779693550093,
+      "metaMtime": 1779787896201
+    },
+    "d08fad43-d654-4da8-9183-a8b2be97b9df": {
+      "assetMtime": 1779693550093,
+      "metaMtime": 1779787896201
+    },
+    "79153a7d-f6c0-40f8-a859-c193b69ef475": {
+      "assetMtime": 1779702877634,
+      "metaMtime": 1779787896223
+    },
+    "f8ccc4c4-8bd3-42fa-ba8d-e6fea6e5689e": {
+      "assetMtime": 1779702877634,
+      "metaMtime": 1779787896223
+    },
+    "7e488f6e-00c5-47c1-a13b-bb0383e0fe49": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896245
+    },
+    "a90a01d5-19c8-48ac-8a0b-76eaf40a4f22": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896245
+    },
+    "89a4b5c3-fcec-4617-801a-042db1148f1e": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896275
+    },
+    "950feed2-6b91-48e7-9e45-0f84e29fa374": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896275
+    },
+    "8e6bb0db-5aec-4502-b01c-2b570df8b8e0": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896281
+    },
+    "66897eca-9b2b-443d-8845-5f1143511415": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896281
+    },
+    "9192e845-b6ce-4f3c-9028-fd88b5c6fc2b": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896261
+    },
+    "54f2339d-b25a-4da9-a712-6abf70bdda2c": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896261
+    },
+    "93c808c9-0d11-4fc0-a474-7d2908eae884": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896203
+    },
+    "93401c04-7318-4421-888c-6d2c999e820c": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896203
+    },
+    "9416beb5-99a2-4032-81f0-15b128ac79c7": {
+      "assetMtime": 1779442368732,
+      "metaMtime": 1779787896213
+    },
+    "0943bbee-5c59-4e98-a0b0-88097aaa066e": {
+      "assetMtime": 1779442368732,
+      "metaMtime": 1779787896213
+    },
+    "99f4ce7d-43df-4111-bcff-c19f894f41f0": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896255
+    },
+    "3a6d8a97-61bf-4f4d-a469-d04d4c37cbea": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896255
+    },
+    "a12cfea2-da25-4c46-b2c9-7a8b1f8c2b4e": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896265
+    },
+    "5dd873e2-c6b7-4322-a2df-84c1c5581b15": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896265
+    },
+    "a9c8ce35-56eb-4f14-84dc-bd0ab74049d9": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896246
+    },
+    "cdc784c0-9bc6-40d8-bee3-252443e20957": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896246
+    },
+    "ae221cf0-7789-4ee6-81c6-f0e9cf9318c7": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896194
+    },
+    "330ebbfa-6163-4371-a6bb-a127df1bbcb1": {
+      "assetMtime": 1779442850391,
+      "metaMtime": 1779787896194
+    },
+    "b3e51973-f5c4-4613-b84d-c67d9a01effc": {
+      "assetMtime": 1779689092179,
+      "metaMtime": 1779787896231
+    },
+    "40ea5801-3154-4d7b-abcc-ad765c03d2cd": {
+      "assetMtime": 1779689092179,
+      "metaMtime": 1779787896231
+    },
+    "b9374bc0-8756-492e-9b1c-eaf863a6695f": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896246
+    },
+    "a331ef9b-d611-4140-b354-40ab0b0bacf4": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896246
+    },
+    "bd182e23-1332-4950-9aea-715a4ec05e00": {
+      "assetMtime": 1779679440812,
+      "metaMtime": 1779787896191
+    },
+    "eeab856d-2f0c-4904-b061-a69872843c74": {
+      "assetMtime": 1779679440812,
+      "metaMtime": 1779787896191
+    },
+    "c2dc0380-3a80-4e40-8697-78bb3c8091bf": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896237
+    },
+    "c0ac7c70-e6d1-41cb-8716-7978d9a5ddaa": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896237
+    },
+    "c3c7b3ba-3bb5-41d1-9fcc-225253fcf41d": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896268
+    },
+    "a00c25b4-00a9-4cde-b9ed-e4bcbcb7c000": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896268
+    },
+    "cfe2d6f7-754e-432c-8316-5f486acef292": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896256
+    },
+    "5d6e46e7-3d2b-4c86-9323-a4fc9fcb1fb0": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896256
+    },
+    "d5e29b52-4aa3-424e-ba04-647cc5117b0d": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896244
+    },
+    "99a6d156-52a9-4e91-8d50-9394acb38e18": {
+      "assetMtime": 1779349767191,
+      "metaMtime": 1779787896244
+    },
+    "de6700ad-7259-4eac-a21d-da14ec1a032f": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896274
+    },
+    "255f248a-7ac7-45e2-bcb4-9e15be0b48e7": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896274
+    },
+    "e5a89e0d-bcaa-44b8-8ff6-29c28b33899a": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896236
+    },
+    "837a1cdb-2c4d-496d-80e0-2d3696bbf7b8": {
+      "assetMtime": 1779349767190,
+      "metaMtime": 1779787896236
+    },
+    "f3bcb015-667a-46ee-9738-7a7c35078025": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896284
+    },
+    "64b724b1-ef00-4729-9c66-11028f0b83f0": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896284
+    },
+    "f4e27ea1-751f-4e8d-b38e-a2f8bd38b45e": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896280
+    },
+    "f2219367-2406-4c77-aad1-c26d7892a11a": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896280
+    },
+    "f6c63d7b-2ffc-4f5a-b8ed-f7f28b56b432": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896257
+    },
+    "3dc678ba-1b01-45d0-b23d-f73fd8223585": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896257
+    },
+    "f81deb52-b6b7-4767-b149-5e6f4a6f4347": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896258
+    },
+    "3ed4424f-d6e1-42da-9a74-029edf57b46a": {
+      "assetMtime": 1779349767193,
+      "metaMtime": 1779787896258
+    },
+    "fab04dbe-5891-45dc-be5c-967a7b01f811": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896238
+    },
+    "f2269caf-49b0-40d1-85e1-2494ec76981d": {
+      "assetMtime": 1779349767192,
+      "metaMtime": 1779787896238
+    }
+  },
+  "result": {
+    "name": "ui",
+    "width": 2048,
+    "height": 2048,
+    "ver": "1.2.5",
+    "uuid": "5c4ba11a-2681-4e50-8838-7329d14dd494",
+    "importer": "auto-atlas",
+    "maxWidth": 2048,
+    "maxHeight": 2048,
+    "padding": 2,
+    "compressionLevel": 6,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": false,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "unbelievable",
+            "uuid": "3c8a8f57-1801-4ee2-956b-63f21998d091",
+            "textureUuid": "11cc7359-e4d3-43fd-8f92-0eab905ad1e8",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_12.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 766,
+              "height": 139,
+              "rotatedWidth": 766,
+              "rotatedHeight": 139
+            },
+            "rawWidth": 766,
+            "rawHeight": 139,
+            "width": 772,
+            "height": 145,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/11/11cc7359-e4d3-43fd-8f92-0eab905ad1e8.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 772,
+            "rotatedHeight": 145
+          },
+          {
+            "name": "w3",
+            "uuid": "4d2e4f57-7a93-4b25-80b0-f5dcb11885ef",
+            "textureUuid": "39de6741-bd2d-4d18-b270-9882ec4c1b1a",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_17.png",
+            "trim": {
+              "x": 775,
+              "y": 3,
+              "width": 105,
+              "height": 93,
+              "rotatedWidth": 93,
+              "rotatedHeight": 105
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 111,
+            "height": 99,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/39/39de6741-bd2d-4d18-b270-9882ec4c1b1a.png",
+            "x": 772,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 99,
+            "rotatedHeight": 111
+          },
+          {
+            "name": "b6",
+            "uuid": "f6c63d7b-2ffc-4f5a-b8ed-f7f28b56b432",
+            "textureUuid": "3dc678ba-1b01-45d0-b23d-f73fd8223585",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_49.png",
+            "trim": {
+              "x": 775,
+              "y": 114,
+              "width": 91,
+              "height": 133,
+              "rotatedWidth": 91,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 97,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/3d/3dc678ba-1b01-45d0-b23d-f73fd8223585.png",
+            "x": 772,
+            "y": 111,
+            "rotatedWidth": 97,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "excellent",
+            "uuid": "149d397c-ac38-4a7c-87a0-a1994b7cd772",
+            "textureUuid": "8ac9127c-13b8-428e-b59b-5071c1bbe1d1",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_4.png",
+            "trim": {
+              "x": 3,
+              "y": 148,
+              "width": 551,
+              "height": 138,
+              "rotatedWidth": 551,
+              "rotatedHeight": 138
+            },
+            "rawWidth": 551,
+            "rawHeight": 138,
+            "width": 557,
+            "height": 144,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/8a/8ac9127c-13b8-428e-b59b-5071c1bbe1d1.png",
+            "x": 0,
+            "y": 145,
+            "rotatedWidth": 557,
+            "rotatedHeight": 144
+          },
+          {
+            "name": "gameplay_mask_mj",
+            "uuid": "bd182e23-1332-4950-9aea-715a4ec05e00",
+            "textureUuid": "eeab856d-2f0c-4904-b061-a69872843c74",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_40.png",
+            "trim": {
+              "x": 560,
+              "y": 148,
+              "width": 156,
+              "height": 206,
+              "rotatedWidth": 206,
+              "rotatedHeight": 156
+            },
+            "rawWidth": 156,
+            "rawHeight": 206,
+            "width": 162,
+            "height": 212,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/ee/eeab856d-2f0c-4904-b061-a69872843c74.png",
+            "x": 557,
+            "y": 145,
+            "rotated": true,
+            "rotatedWidth": 212,
+            "rotatedHeight": 162
+          },
+          {
+            "name": "w5",
+            "uuid": "f4e27ea1-751f-4e8d-b38e-a2f8bd38b45e",
+            "textureUuid": "f2219367-2406-4c77-aad1-c26d7892a11a",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_48.png",
+            "trim": {
+              "x": 772,
+              "y": 253,
+              "width": 108,
+              "height": 97,
+              "rotatedWidth": 97,
+              "rotatedHeight": 108
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 114,
+            "height": 103,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/f2/f2219367-2406-4c77-aad1-c26d7892a11a.png",
+            "x": 769,
+            "y": 250,
+            "rotated": true,
+            "rotatedWidth": 103,
+            "rotatedHeight": 114
+          },
+          {
+            "name": "amazing",
+            "uuid": "ae221cf0-7789-4ee6-81c6-f0e9cf9318c7",
+            "textureUuid": "330ebbfa-6163-4371-a6bb-a127df1bbcb1",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_37.png",
+            "trim": {
+              "x": 3,
+              "y": 292,
+              "width": 539,
+              "height": 163,
+              "rotatedWidth": 539,
+              "rotatedHeight": 163
+            },
+            "rawWidth": 539,
+            "rawHeight": 163,
+            "width": 545,
+            "height": 169,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/33/330ebbfa-6163-4371-a6bb-a127df1bbcb1.png",
+            "x": 0,
+            "y": 289,
+            "rotatedWidth": 545,
+            "rotatedHeight": 169
+          },
+          {
+            "name": "组 6 拷贝 17",
+            "uuid": "b3e51973-f5c4-4613-b84d-c67d9a01effc",
+            "textureUuid": "40ea5801-3154-4d7b-abcc-ad765c03d2cd",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_38.png",
+            "trim": {
+              "x": 548,
+              "y": 310,
+              "width": 163,
+              "height": 203,
+              "rotatedWidth": 203,
+              "rotatedHeight": 163
+            },
+            "rawWidth": 163,
+            "rawHeight": 203,
+            "width": 169,
+            "height": 209,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/40/40ea5801-3154-4d7b-abcc-ad765c03d2cd.png",
+            "x": 545,
+            "y": 307,
+            "rotated": true,
+            "rotatedWidth": 209,
+            "rotatedHeight": 169
+          },
+          {
+            "name": "b4",
+            "uuid": "3ddfdb55-8b3d-41b2-9845-96a8433d430a",
+            "textureUuid": "0911aeed-114d-462d-95ad-eb0cb8d33175",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_13.png",
+            "trim": {
+              "x": 757,
+              "y": 367,
+              "width": 110,
+              "height": 133,
+              "rotatedWidth": 110,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 116,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/09/0911aeed-114d-462d-95ad-eb0cb8d33175.png",
+            "x": 754,
+            "y": 364,
+            "rotatedWidth": 116,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "hirt",
+            "uuid": "9416beb5-99a2-4032-81f0-15b128ac79c7",
+            "textureUuid": "0943bbee-5c59-4e98-a0b0-88097aaa066e",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_33.png",
+            "trim": {
+              "x": 3,
+              "y": 461,
+              "width": 525,
+              "height": 516,
+              "rotatedWidth": 525,
+              "rotatedHeight": 516
+            },
+            "rawWidth": 525,
+            "rawHeight": 516,
+            "width": 531,
+            "height": 522,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/09/0943bbee-5c59-4e98-a0b0-88097aaa066e.png",
+            "x": 0,
+            "y": 458,
+            "rotatedWidth": 531,
+            "rotatedHeight": 522
+          },
+          {
+            "name": "gameplay_select_mj",
+            "uuid": "2f4c5ac2-6f68-4945-b0b0-b2bac740badd",
+            "textureUuid": "68f6df77-286f-4a8c-a2ef-277a75ca9f70",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_9.png",
+            "trim": {
+              "x": 534,
+              "y": 479,
+              "width": 163,
+              "height": 202,
+              "rotatedWidth": 202,
+              "rotatedHeight": 163
+            },
+            "rawWidth": 163,
+            "rawHeight": 202,
+            "width": 169,
+            "height": 208,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/68/68f6df77-286f-4a8c-a2ef-277a75ca9f70.png",
+            "x": 531,
+            "y": 476,
+            "rotated": true,
+            "rotatedWidth": 208,
+            "rotatedHeight": 169
+          },
+          {
+            "name": "J_xia",
+            "uuid": "72dcd908-1457-451d-b240-f2b37d550efc",
+            "textureUuid": "1c45355e-ef85-4bad-9951-f4103ef0fd75",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_24.png",
+            "trim": {
+              "x": 742,
+              "y": 506,
+              "width": 127,
+              "height": 131,
+              "rotatedWidth": 127,
+              "rotatedHeight": 131
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 133,
+            "height": 137,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/1c/1c45355e-ef85-4bad-9951-f4103ef0fd75.png",
+            "x": 739,
+            "y": 503,
+            "rotatedWidth": 133,
+            "rotatedHeight": 137
+          },
+          {
+            "name": "J_chun",
+            "uuid": "b9374bc0-8756-492e-9b1c-eaf863a6695f",
+            "textureUuid": "a331ef9b-d611-4140-b354-40ab0b0bacf4",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_39.png",
+            "trim": {
+              "x": 742,
+              "y": 643,
+              "width": 127,
+              "height": 129,
+              "rotatedWidth": 127,
+              "rotatedHeight": 129
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 133,
+            "height": 135,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/a3/a331ef9b-d611-4140-b354-40ab0b0bacf4.png",
+            "x": 739,
+            "y": 640,
+            "rotatedWidth": 133,
+            "rotatedHeight": 135
+          },
+          {
+            "name": "loading_img_logo",
+            "uuid": "79153a7d-f6c0-40f8-a859-c193b69ef475",
+            "textureUuid": "f8ccc4c4-8bd3-42fa-ba8d-e6fea6e5689e",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_27.png",
+            "trim": {
+              "x": 534,
+              "y": 648,
+              "width": 500,
+              "height": 199,
+              "rotatedWidth": 199,
+              "rotatedHeight": 500
+            },
+            "rawWidth": 500,
+            "rawHeight": 199,
+            "width": 506,
+            "height": 205,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/f8/f8ccc4c4-8bd3-42fa-ba8d-e6fea6e5689e.png",
+            "x": 531,
+            "y": 645,
+            "rotated": true,
+            "rotatedWidth": 205,
+            "rotatedHeight": 506
+          },
+          {
+            "name": "J_dong",
+            "uuid": "0b652108-e3bc-4656-b851-c6a4fb262e42",
+            "textureUuid": "0f7c1d32-af18-4e8e-86a5-157efd5872c6",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_2.png",
+            "trim": {
+              "x": 739,
+              "y": 778,
+              "width": 127,
+              "height": 127,
+              "rotatedWidth": 127,
+              "rotatedHeight": 127
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 133,
+            "height": 133,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/0f/0f7c1d32-af18-4e8e-86a5-157efd5872c6.png",
+            "x": 736,
+            "y": 775,
+            "rotatedWidth": 133,
+            "rotatedHeight": 133
+          },
+          {
+            "name": "J_qiu",
+            "uuid": "5ef843db-4a38-4d00-b61c-f54cfab2fb00",
+            "textureUuid": "15487999-7347-4d20-9db9-526120208a94",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_19.png",
+            "trim": {
+              "x": 739,
+              "y": 911,
+              "width": 127,
+              "height": 127,
+              "rotatedWidth": 127,
+              "rotatedHeight": 127
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 133,
+            "height": 133,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/15/15487999-7347-4d20-9db9-526120208a94.png",
+            "x": 736,
+            "y": 908,
+            "rotatedWidth": 133,
+            "rotatedHeight": 133
+          },
+          {
+            "name": "组 1222",
+            "uuid": "5262d56c-799f-4481-8701-329abdf03e82",
+            "textureUuid": "34f1e239-ca7c-40ff-b29d-a8aec1f56320",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_18.png",
+            "trim": {
+              "x": 739,
+              "y": 1044,
+              "width": 497,
+              "height": 124,
+              "rotatedWidth": 124,
+              "rotatedHeight": 497
+            },
+            "rawWidth": 497,
+            "rawHeight": 124,
+            "width": 503,
+            "height": 130,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/34/34f1e239-ca7c-40ff-b29d-a8aec1f56320.png",
+            "x": 736,
+            "y": 1041,
+            "rotated": true,
+            "rotatedWidth": 130,
+            "rotatedHeight": 503
+          },
+          {
+            "name": "0123456789",
+            "uuid": "424167fe-89b6-425f-936e-ae21e681ccf1",
+            "textureUuid": "6fa1d13b-1d45-4881-b027-97e68b7ae068",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_15.png",
+            "trim": {
+              "x": 3,
+              "y": 983,
+              "width": 501,
+              "height": 72,
+              "rotatedWidth": 501,
+              "rotatedHeight": 72
+            },
+            "rawWidth": 555,
+            "rawHeight": 72,
+            "width": 507,
+            "height": 78,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/6f/6fa1d13b-1d45-4881-b027-97e68b7ae068.png",
+            "x": 0,
+            "y": 980,
+            "rotatedWidth": 507,
+            "rotatedHeight": 78
+          },
+          {
+            "name": "great",
+            "uuid": "6104edc3-4c18-498b-a3b1-8496192ec602",
+            "textureUuid": "d3e71e39-89cd-4195-9b3d-9381851e77de",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_20.png",
+            "trim": {
+              "x": 3,
+              "y": 1547,
+              "width": 366,
+              "height": 134,
+              "rotatedWidth": 134,
+              "rotatedHeight": 366
+            },
+            "rawWidth": 366,
+            "rawHeight": 134,
+            "width": 372,
+            "height": 140,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/d3/d3e71e39-89cd-4195-9b3d-9381851e77de.png",
+            "x": 0,
+            "y": 1544,
+            "rotated": true,
+            "rotatedWidth": 140,
+            "rotatedHeight": 372
+          },
+          {
+            "name": "t1",
+            "uuid": "269dad3d-e0bd-4534-b3b5-96bb583d3c4f",
+            "textureUuid": "9f025bd6-054d-4d34-8e9d-5e8aa83f0881",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 1919,
+              "width": 113,
+              "height": 116,
+              "rotatedWidth": 113,
+              "rotatedHeight": 116
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 119,
+            "height": 122,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/9f/9f025bd6-054d-4d34-8e9d-5e8aa83f0881.png",
+            "x": 0,
+            "y": 1916,
+            "rotatedWidth": 119,
+            "rotatedHeight": 122
+          },
+          {
+            "name": "b1",
+            "uuid": "a9c8ce35-56eb-4f14-84dc-bd0ab74049d9",
+            "textureUuid": "cdc784c0-9bc6-40d8-bee3-252443e20957",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_36.png",
+            "trim": {
+              "x": 122,
+              "y": 1919,
+              "width": 114,
+              "height": 115,
+              "rotatedWidth": 114,
+              "rotatedHeight": 115
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 120,
+            "height": 121,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/cd/cdc784c0-9bc6-40d8-bee3-252443e20957.png",
+            "x": 119,
+            "y": 1916,
+            "rotatedWidth": 120,
+            "rotatedHeight": 121
+          },
+          {
+            "name": "背光",
+            "uuid": "74553dd3-190f-4a99-a201-21e593e50520",
+            "textureUuid": "e6c3e443-0966-457d-af0e-f78634a5595d",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_25.png",
+            "trim": {
+              "x": 242,
+              "y": 1061,
+              "width": 272,
+              "height": 272,
+              "rotatedWidth": 272,
+              "rotatedHeight": 272
+            },
+            "rawWidth": 272,
+            "rawHeight": 272,
+            "width": 278,
+            "height": 278,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/e6/e6c3e443-0966-457d-af0e-f78634a5595d.png",
+            "x": 239,
+            "y": 1058,
+            "rotatedWidth": 278,
+            "rotatedHeight": 278
+          },
+          {
+            "name": "w8",
+            "uuid": "61ba8138-a83d-4195-a5c3-7a07ee4c8641",
+            "textureUuid": "e43e219b-71b5-49b3-83d4-f721fc5e8522",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_21.png",
+            "trim": {
+              "x": 143,
+              "y": 1061,
+              "width": 108,
+              "height": 90,
+              "rotatedWidth": 90,
+              "rotatedHeight": 108
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 114,
+            "height": 96,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/e4/e43e219b-71b5-49b3-83d4-f721fc5e8522.png",
+            "x": 140,
+            "y": 1058,
+            "rotated": true,
+            "rotatedWidth": 96,
+            "rotatedHeight": 114
+          },
+          {
+            "name": "b9",
+            "uuid": "9192e845-b6ce-4f3c-9028-fd88b5c6fc2b",
+            "textureUuid": "54f2339d-b25a-4da9-a712-6abf70bdda2c",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_31.png",
+            "trim": {
+              "x": 3,
+              "y": 1061,
+              "width": 113,
+              "height": 134,
+              "rotatedWidth": 134,
+              "rotatedHeight": 113
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 119,
+            "height": 140,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/54/54f2339d-b25a-4da9-a712-6abf70bdda2c.png",
+            "x": 0,
+            "y": 1058,
+            "rotated": true,
+            "rotatedWidth": 140,
+            "rotatedHeight": 119
+          },
+          {
+            "name": "t4",
+            "uuid": "39ba6566-0a18-42b1-8602-384d307155c3",
+            "textureUuid": "63734648-c275-4346-8bce-58e458a2b2fb",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_11.png",
+            "trim": {
+              "x": 143,
+              "y": 1175,
+              "width": 88,
+              "height": 133,
+              "rotatedWidth": 88,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 94,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/63/63734648-c275-4346-8bce-58e458a2b2fb.png",
+            "x": 140,
+            "y": 1172,
+            "rotatedWidth": 94,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "b5",
+            "uuid": "99f4ce7d-43df-4111-bcff-c19f894f41f0",
+            "textureUuid": "3a6d8a97-61bf-4f4d-a469-d04d4c37cbea",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_34.png",
+            "trim": {
+              "x": 3,
+              "y": 1180,
+              "width": 110,
+              "height": 133,
+              "rotatedWidth": 133,
+              "rotatedHeight": 110
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 116,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/3a/3a6d8a97-61bf-4f4d-a469-d04d4c37cbea.png",
+            "x": 0,
+            "y": 1177,
+            "rotated": true,
+            "rotatedWidth": 139,
+            "rotatedHeight": 116
+          },
+          {
+            "name": "b3",
+            "uuid": "cfe2d6f7-754e-432c-8316-5f486acef292",
+            "textureUuid": "5d6e46e7-3d2b-4c86-9323-a4fc9fcb1fb0",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_43.png",
+            "trim": {
+              "x": 3,
+              "y": 1296,
+              "width": 110,
+              "height": 133,
+              "rotatedWidth": 133,
+              "rotatedHeight": 110
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 116,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/5d/5d6e46e7-3d2b-4c86-9323-a4fc9fcb1fb0.png",
+            "x": 0,
+            "y": 1293,
+            "rotated": true,
+            "rotatedWidth": 139,
+            "rotatedHeight": 116
+          },
+          {
+            "name": "b8",
+            "uuid": "f81deb52-b6b7-4767-b149-5e6f4a6f4347",
+            "textureUuid": "3ed4424f-d6e1-42da-9a74-029edf57b46a",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_50.png",
+            "trim": {
+              "x": 143,
+              "y": 1314,
+              "width": 86,
+              "height": 150,
+              "rotatedWidth": 86,
+              "rotatedHeight": 150
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 92,
+            "height": 156,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/3e/3ed4424f-d6e1-42da-9a74-029edf57b46a.png",
+            "x": 140,
+            "y": 1311,
+            "rotatedWidth": 92,
+            "rotatedHeight": 156
+          },
+          {
+            "name": "t5",
+            "uuid": "a12cfea2-da25-4c46-b2c9-7a8b1f8c2b4e",
+            "textureUuid": "5dd873e2-c6b7-4322-a2df-84c1c5581b15",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_35.png",
+            "trim": {
+              "x": 3,
+              "y": 1412,
+              "width": 98,
+              "height": 133,
+              "rotatedWidth": 133,
+              "rotatedHeight": 98
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 104,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/5d/5dd873e2-c6b7-4322-a2df-84c1c5581b15.png",
+            "x": 0,
+            "y": 1409,
+            "rotated": true,
+            "rotatedWidth": 139,
+            "rotatedHeight": 104
+          },
+          {
+            "name": "w2",
+            "uuid": "02dffdc6-0bf6-4401-a1d9-2fe33273aa73",
+            "textureUuid": "16688d5f-4e34-4e42-b77d-e8eee70851f6",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374404_image_0.png",
+            "trim": {
+              "x": 142,
+              "y": 1470,
+              "width": 107,
+              "height": 66,
+              "rotatedWidth": 107,
+              "rotatedHeight": 66
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 113,
+            "height": 72,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/16/16688d5f-4e34-4e42-b77d-e8eee70851f6.png",
+            "x": 139,
+            "y": 1467,
+            "rotatedWidth": 113,
+            "rotatedHeight": 72
+          },
+          {
+            "name": "w6",
+            "uuid": "8e6bb0db-5aec-4502-b01c-2b570df8b8e0",
+            "textureUuid": "66897eca-9b2b-443d-8845-5f1143511415",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_30.png",
+            "trim": {
+              "x": 235,
+              "y": 1339,
+              "width": 104,
+              "height": 110,
+              "rotatedWidth": 104,
+              "rotatedHeight": 110
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 110,
+            "height": 116,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/66/66897eca-9b2b-443d-8845-5f1143511415.png",
+            "x": 232,
+            "y": 1336,
+            "rotatedWidth": 110,
+            "rotatedHeight": 116
+          },
+          {
+            "name": "手指头",
+            "uuid": "0d669316-5b65-4535-a6cc-2e804c5c8a27",
+            "textureUuid": "fd35fc7a-cf2b-4931-8c9e-f088371eba62",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_3.png",
+            "trim": {
+              "x": 520,
+              "y": 1154,
+              "width": 150,
+              "height": 190,
+              "rotatedWidth": 190,
+              "rotatedHeight": 150
+            },
+            "rawWidth": 150,
+            "rawHeight": 190,
+            "width": 156,
+            "height": 196,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/fd/fd35fc7a-cf2b-4931-8c9e-f088371eba62.png",
+            "x": 517,
+            "y": 1151,
+            "rotated": true,
+            "rotatedWidth": 196,
+            "rotatedHeight": 156
+          },
+          {
+            "name": "good",
+            "uuid": "93c808c9-0d11-4fc0-a474-7d2908eae884",
+            "textureUuid": "93401c04-7318-4421-888c-6d2c999e820c",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_32.png",
+            "trim": {
+              "x": 143,
+              "y": 1547,
+              "width": 342,
+              "height": 138,
+              "rotatedWidth": 138,
+              "rotatedHeight": 342
+            },
+            "rawWidth": 342,
+            "rawHeight": 138,
+            "width": 348,
+            "height": 144,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/93/93401c04-7318-4421-888c-6d2c999e820c.png",
+            "x": 140,
+            "y": 1544,
+            "rotated": true,
+            "rotatedWidth": 144,
+            "rotatedHeight": 348
+          },
+          {
+            "name": "t3",
+            "uuid": "3e0cd3ab-8895-4c96-93fe-98b23bc3d0de",
+            "textureUuid": "2ddb13c8-3eb5-4ad3-8332-8e46d4819b67",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_14.png",
+            "trim": {
+              "x": 255,
+              "y": 1455,
+              "width": 86,
+              "height": 133,
+              "rotatedWidth": 133,
+              "rotatedHeight": 86
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 92,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/2d/2ddb13c8-3eb5-4ad3-8332-8e46d4819b67.png",
+            "x": 252,
+            "y": 1452,
+            "rotated": true,
+            "rotatedWidth": 139,
+            "rotatedHeight": 92
+          },
+          {
+            "name": "b7",
+            "uuid": "70a54775-80c4-4812-acc6-05330cda4185",
+            "textureUuid": "ac5164ec-903d-45b3-af4e-7d3d97e7306d",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_23.png",
+            "trim": {
+              "x": 345,
+              "y": 1339,
+              "width": 106,
+              "height": 142,
+              "rotatedWidth": 142,
+              "rotatedHeight": 106
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 112,
+            "height": 148,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/ac/ac5164ec-903d-45b3-af4e-7d3d97e7306d.png",
+            "x": 342,
+            "y": 1336,
+            "rotated": true,
+            "rotatedWidth": 148,
+            "rotatedHeight": 112
+          },
+          {
+            "name": "rate_img_star",
+            "uuid": "28a47b26-b98a-4d47-80dc-5ce8d78e5a3a",
+            "textureUuid": "4649cc68-a4b2-4a70-ae8a-65d8dc1e4dd5",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_7.png",
+            "trim": {
+              "x": 242,
+              "y": 1895,
+              "width": 140,
+              "height": 132,
+              "rotatedWidth": 132,
+              "rotatedHeight": 140
+            },
+            "rawWidth": 140,
+            "rawHeight": 132,
+            "width": 146,
+            "height": 138,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/46/4649cc68-a4b2-4a70-ae8a-65d8dc1e4dd5.png",
+            "x": 239,
+            "y": 1892,
+            "rotated": true,
+            "rotatedWidth": 138,
+            "rotatedHeight": 146
+          },
+          {
+            "name": "gameplay_img_shadow_up",
+            "uuid": "29b4a21c-54b4-465f-b6d2-c4eca64721f8",
+            "textureUuid": "bc36cded-504f-43ab-b264-905315ae96a6",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_8.png",
+            "trim": {
+              "x": 394,
+              "y": 1451,
+              "width": 264,
+              "height": 306,
+              "rotatedWidth": 306,
+              "rotatedHeight": 264
+            },
+            "rawWidth": 264,
+            "rawHeight": 306,
+            "width": 270,
+            "height": 312,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/bc/bc36cded-504f-43ab-b264-905315ae96a6.png",
+            "x": 391,
+            "y": 1448,
+            "rotated": true,
+            "rotatedWidth": 312,
+            "rotatedHeight": 270
+          },
+          {
+            "name": "w9",
+            "uuid": "f3bcb015-667a-46ee-9738-7a7c35078025",
+            "textureUuid": "64b724b1-ef00-4729-9c66-11028f0b83f0",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_47.png",
+            "trim": {
+              "x": 493,
+              "y": 1339,
+              "width": 103,
+              "height": 106,
+              "rotatedWidth": 103,
+              "rotatedHeight": 106
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 109,
+            "height": 112,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/64/64b724b1-ef00-4729-9c66-11028f0b83f0.png",
+            "x": 490,
+            "y": 1336,
+            "rotatedWidth": 109,
+            "rotatedHeight": 112
+          },
+          {
+            "name": "H_zhu",
+            "uuid": "7e488f6e-00c5-47c1-a13b-bb0383e0fe49",
+            "textureUuid": "a90a01d5-19c8-48ac-8a0b-76eaf40a4f22",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_28.png",
+            "trim": {
+              "x": 602,
+              "y": 1310,
+              "width": 131,
+              "height": 132,
+              "rotatedWidth": 131,
+              "rotatedHeight": 132
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 137,
+            "height": 138,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/a9/a90a01d5-19c8-48ac-8a0b-76eaf40a4f22.png",
+            "x": 599,
+            "y": 1307,
+            "rotatedWidth": 137,
+            "rotatedHeight": 138
+          },
+          {
+            "name": "w7",
+            "uuid": "2801a70f-bdb7-4bf7-9e59-e768a6933c3d",
+            "textureUuid": "c5da389e-b6fa-4ba1-b02a-6d9770e4cefb",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_6.png",
+            "trim": {
+              "x": 287,
+              "y": 1547,
+              "width": 104,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 104
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 110,
+            "height": 106,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/c5/c5da389e-b6fa-4ba1-b02a-6d9770e4cefb.png",
+            "x": 284,
+            "y": 1544,
+            "rotated": true,
+            "rotatedWidth": 106,
+            "rotatedHeight": 110
+          },
+          {
+            "name": "w4",
+            "uuid": "4a642819-ef5b-426f-b8e4-2f301a1d8c54",
+            "textureUuid": "21d5677a-6cc9-40f6-8678-92db44055d99",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_16.png",
+            "trim": {
+              "x": 287,
+              "y": 1657,
+              "width": 100,
+              "height": 95,
+              "rotatedWidth": 100,
+              "rotatedHeight": 95
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 106,
+            "height": 101,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/21/21d5677a-6cc9-40f6-8678-92db44055d99.png",
+            "x": 284,
+            "y": 1654,
+            "rotatedWidth": 106,
+            "rotatedHeight": 101
+          },
+          {
+            "name": "H_mei",
+            "uuid": "c2dc0380-3a80-4e40-8697-78bb3c8091bf",
+            "textureUuid": "c0ac7c70-e6d1-41cb-8716-7978d9a5ddaa",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_41.png",
+            "trim": {
+              "x": 287,
+              "y": 1758,
+              "width": 131,
+              "height": 132,
+              "rotatedWidth": 132,
+              "rotatedHeight": 131
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 137,
+            "height": 138,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/c0/c0ac7c70-e6d1-41cb-8716-7978d9a5ddaa.png",
+            "x": 284,
+            "y": 1755,
+            "rotated": true,
+            "rotatedWidth": 138,
+            "rotatedHeight": 137
+          },
+          {
+            "name": "w1",
+            "uuid": "31db8231-f463-44ba-822e-9e0e17fafa1d",
+            "textureUuid": "bfb49aad-09d7-458f-a542-b1dda1ee2db1",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374406_image_10.png",
+            "trim": {
+              "x": 393,
+              "y": 1721,
+              "width": 105,
+              "height": 28,
+              "rotatedWidth": 105,
+              "rotatedHeight": 28
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 111,
+            "height": 34,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/bf/bfb49aad-09d7-458f-a542-b1dda1ee2db1.png",
+            "x": 390,
+            "y": 1718,
+            "rotatedWidth": 111,
+            "rotatedHeight": 34
+          },
+          {
+            "name": "t9",
+            "uuid": "065017b3-7f8f-4661-b42b-c385504ad9af",
+            "textureUuid": "e247fe1c-7300-4de5-b4f8-8f4f0dc6846b",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374405_image_1.png",
+            "trim": {
+              "x": 706,
+              "y": 1547,
+              "width": 96,
+              "height": 153,
+              "rotatedWidth": 153,
+              "rotatedHeight": 96
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 102,
+            "height": 159,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/e2/e247fe1c-7300-4de5-b4f8-8f4f0dc6846b.png",
+            "x": 703,
+            "y": 1544,
+            "rotated": true,
+            "rotatedWidth": 159,
+            "rotatedHeight": 102
+          },
+          {
+            "name": "t7",
+            "uuid": "89a4b5c3-fcec-4617-801a-042db1148f1e",
+            "textureUuid": "950feed2-6b91-48e7-9e45-0f84e29fa374",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_29.png",
+            "trim": {
+              "x": 706,
+              "y": 1649,
+              "width": 96,
+              "height": 153,
+              "rotatedWidth": 153,
+              "rotatedHeight": 96
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 102,
+            "height": 159,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/95/950feed2-6b91-48e7-9e45-0f84e29fa374.png",
+            "x": 703,
+            "y": 1646,
+            "rotated": true,
+            "rotatedWidth": 159,
+            "rotatedHeight": 102
+          },
+          {
+            "name": "t6",
+            "uuid": "c3c7b3ba-3bb5-41d1-9fcc-225253fcf41d",
+            "textureUuid": "a00c25b4-00a9-4cde-b9ed-e4bcbcb7c000",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_42.png",
+            "trim": {
+              "x": 380,
+              "y": 1895,
+              "width": 96,
+              "height": 133,
+              "rotatedWidth": 96,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 102,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/a0/a00c25b4-00a9-4cde-b9ed-e4bcbcb7c000.png",
+            "x": 377,
+            "y": 1892,
+            "rotatedWidth": 102,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "t8",
+            "uuid": "de6700ad-7259-4eac-a21d-da14ec1a032f",
+            "textureUuid": "255f248a-7ac7-45e2-bcb4-9e15be0b48e7",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_45.png",
+            "trim": {
+              "x": 425,
+              "y": 1755,
+              "width": 95,
+              "height": 133,
+              "rotatedWidth": 95,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 101,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/25/255f248a-7ac7-45e2-bcb4-9e15be0b48e7.png",
+            "x": 422,
+            "y": 1752,
+            "rotatedWidth": 101,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "b2",
+            "uuid": "d5e29b52-4aa3-424e-ba04-647cc5117b0d",
+            "textureUuid": "99a6d156-52a9-4e91-8d50-9394acb38e18",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_44.png",
+            "trim": {
+              "x": 482,
+              "y": 1894,
+              "width": 62,
+              "height": 133,
+              "rotatedWidth": 62,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 68,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/99/99a6d156-52a9-4e91-8d50-9394acb38e18.png",
+            "x": 479,
+            "y": 1891,
+            "rotatedWidth": 68,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "t2",
+            "uuid": "6606220a-ac93-4c17-90f6-52b86024b2be",
+            "textureUuid": "b8db4ac3-59ba-4051-9457-6896195a6954",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_22.png",
+            "trim": {
+              "x": 526,
+              "y": 1751,
+              "width": 32,
+              "height": 133,
+              "rotatedWidth": 32,
+              "rotatedHeight": 133
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 38,
+            "height": 139,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/b8/b8db4ac3-59ba-4051-9457-6896195a6954.png",
+            "x": 523,
+            "y": 1748,
+            "rotatedWidth": 38,
+            "rotatedHeight": 139
+          },
+          {
+            "name": "H_lan",
+            "uuid": "e5a89e0d-bcaa-44b8-8ff6-29c28b33899a",
+            "textureUuid": "837a1cdb-2c4d-496d-80e0-2d3696bbf7b8",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_46.png",
+            "trim": {
+              "x": 564,
+              "y": 1721,
+              "width": 131,
+              "height": 132,
+              "rotatedWidth": 132,
+              "rotatedHeight": 131
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 137,
+            "height": 138,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/83/837a1cdb-2c4d-496d-80e0-2d3696bbf7b8.png",
+            "x": 561,
+            "y": 1718,
+            "rotated": true,
+            "rotatedWidth": 138,
+            "rotatedHeight": 137
+          },
+          {
+            "name": "H_ju",
+            "uuid": "fab04dbe-5891-45dc-be5c-967a7b01f811",
+            "textureUuid": "f2269caf-49b0-40d1-85e1-2494ec76981d",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374408_image_51.png",
+            "trim": {
+              "x": 550,
+              "y": 1890,
+              "width": 131,
+              "height": 132,
+              "rotatedWidth": 131,
+              "rotatedHeight": 132
+            },
+            "rawWidth": 170,
+            "rawHeight": 211,
+            "width": 137,
+            "height": 138,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/f2/f2269caf-49b0-40d1-85e1-2494ec76981d.png",
+            "x": 547,
+            "y": 1887,
+            "rotatedWidth": 137,
+            "rotatedHeight": 138
+          },
+          {
+            "name": "icon_forbidden_50",
+            "uuid": "76797aca-d60a-432d-9786-dfaaf1c7d289",
+            "textureUuid": "d08fad43-d654-4da8-9183-a8b2be97b9df",
+            "path": "/Users/jiayou/mjPlay/temp/trimImages/spritesheet_js_1779789374407_image_26.png",
+            "trim": {
+              "x": 702,
+              "y": 1751,
+              "width": 72,
+              "height": 53,
+              "rotatedWidth": 72,
+              "rotatedHeight": 53
+            },
+            "rawWidth": 76,
+            "rawHeight": 57,
+            "width": 78,
+            "height": 59,
+            "originalPath": "/Users/jiayou/mjPlay/library/imports/d0/d08fad43-d654-4da8-9183-a8b2be97b9df.png",
+            "x": 699,
+            "y": 1748,
+            "rotatedWidth": 78,
+            "rotatedHeight": 59
+          }
+        ],
+        "width": 872,
+        "height": 2038,
+        "name": "ui-1",
+        "imagePath": "/Users/jiayou/mjPlay/temp/TexturePacker/build/native/assets/resources/img/atlas/ui.pac/ui-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "/Users/jiayou/mjPlay/temp/TexturePacker/build/native/assets/resources/img/atlas/ui.pac/compressed/ui-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

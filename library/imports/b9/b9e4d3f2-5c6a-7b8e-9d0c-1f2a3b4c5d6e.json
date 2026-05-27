@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "score_digits",
+    "texture": "a8f3c2e1-4b5d-6a7f-8c9d-0e1f2a3b4c5d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      501,
+      72
+    ],
+    "offset": [
+      -27,
+      0
+    ],
+    "originalSize": [
+      555,
+      72
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hirt",
+    "texture": "0943bbee-5c59-4e98-a0b0-88097aaa066e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      525,
+      516
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      525,
+      516
+    ],
+    "capInsets": [
+      120,
+      115,
+      105,
+      120
+    ]
+  }
+}
