@@ -1,0 +1,181 @@
+Huanhu.png
+size: 1799, 789
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+laba
+  rotate: false
+  xy: 856, 8
+  size: 399, 336
+  orig: 430, 352
+  offset: 31, 0
+  index: -1
+win_leaf_gold
+  rotate: false
+  xy: 926, 502
+  size: 246, 285
+  orig: 246, 285
+  offset: 0, 0
+  index: -1
+右手1
+  rotate: false
+  xy: 1657, 53
+  size: 134, 143
+  orig: 134, 143
+  offset: 0, 0
+  index: -1
+右手_全
+  rotate: true
+  xy: 441, 482
+  size: 305, 483
+  orig: 307, 485
+  offset: 1, 1
+  index: -1
+右胳膊1
+  rotate: true
+  xy: 1368, 13
+  size: 113, 102
+  orig: 113, 102
+  offset: 0, 0
+  index: -1
+右脚1
+  rotate: false
+  xy: 1387, 506
+  size: 129, 108
+  orig: 129, 108
+  offset: 0, 0
+  index: -1
+喇叭-L
+  rotate: true
+  xy: 1267, 128
+  size: 283, 230
+  orig: 283, 230
+  offset: 0, 0
+  index: -1
+嘴1
+  rotate: false
+  xy: 1170, 346
+  size: 95, 65
+  orig: 95, 65
+  offset: 0, 0
+  index: -1
+左手1
+  rotate: true
+  xy: 441, 334
+  size: 146, 241
+  orig: 146, 241
+  offset: 0, 0
+  index: -1
+左脚
+  rotate: false
+  xy: 1518, 366
+  size: 279, 248
+  orig: 279, 248
+  offset: 0, 0
+  index: -1
+徽章1
+  rotate: false
+  xy: 1257, 17
+  size: 109, 109
+  orig: 109, 109
+  offset: 0, 0
+  index: -1
+披风1
+  rotate: false
+  xy: 2, 2
+  size: 592, 319
+  orig: 592, 319
+  offset: 0, 0
+  index: -1
+披风_右1
+  rotate: true
+  xy: 1174, 533
+  size: 81, 211
+  orig: 81, 212
+  offset: 0, 0
+  index: -1
+披风_左1
+  rotate: true
+  xy: 1581, 621
+  size: 166, 214
+  orig: 166, 214
+  offset: 0, 0
+  index: -1
+披风前1
+  rotate: false
+  xy: 1174, 616
+  size: 405, 171
+  orig: 405, 171
+  offset: 0, 0
+  index: -1
+皇冠1
+  rotate: false
+  xy: 684, 346
+  size: 245, 134
+  orig: 245, 134
+  offset: 0, 0
+  index: -1
+眉毛右1
+  rotate: false
+  xy: 1091, 363
+  size: 75, 43
+  orig: 75, 43
+  offset: 0, 0
+  index: -1
+眉毛左1
+  rotate: false
+  xy: 1016, 353
+  size: 73, 53
+  orig: 73, 53
+  offset: 0, 0
+  index: -1
+眼睛右1
+  rotate: true
+  xy: 1499, 26
+  size: 170, 156
+  orig: 194, 175
+  offset: 10, 10
+  index: -1
+眼睛左1
+  rotate: true
+  xy: 1499, 198
+  size: 166, 173
+  orig: 186, 188
+  offset: 7, 8
+  index: -1
+胡子1
+  rotate: false
+  xy: 1170, 413
+  size: 233, 87
+  orig: 233, 87
+  offset: 0, 0
+  index: -1
+胡子阴影1
+  rotate: false
+  xy: 931, 408
+  size: 237, 92
+  orig: 237, 92
+  offset: 0, 0
+  index: -1
+身体1
+  rotate: false
+  xy: 2, 323
+  size: 437, 464
+  orig: 437, 464
+  offset: 0, 0
+  index: -1
+麦穗L
+  rotate: true
+  xy: 596, 23
+  size: 309, 258
+  orig: 309, 258
+  offset: 0, 0
+  index: -1
+鼻子1
+  rotate: false
+  xy: 931, 355
+  size: 83, 51
+  orig: 83, 51
+  offset: 0, 0
+  index: -1
+

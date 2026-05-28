@@ -10,6 +10,12 @@
   ],
   "excluded-modules": [
     "DragonBones",
+    "Layout",
+    "Physics",
+    "PageView",
+    "Slider",
+    "ScrollBar",
+    "ScrollView",
     "TiledMap",
     "VideoPlayer",
     "3D",

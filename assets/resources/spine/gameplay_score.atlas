@@ -1,0 +1,27 @@
+
+gameplay_score.png
+size: 355,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+glow5
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+lizi1
+  rotate: false
+  xy: 260, 165
+  size: 93, 93
+  orig: 97, 97
+  offset: 2, 2
+  index: -1
+yezi5
+  rotate: false
+  xy: 260, 149
+  size: 13, 14
+  orig: 15, 16
+  offset: 1, 1
+  index: -1

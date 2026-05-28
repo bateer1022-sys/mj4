@@ -1,0 +1,34 @@
+
+gameplay_guide_finger.png
+size: 476,263
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xs_guang_2
+  rotate: false
+  xy: 230, 2
+  size: 126, 126
+  orig: 140, 140
+  offset: 7, 7
+  index: -1
+xs_guang_3
+  rotate: false
+  xy: 358, 12
+  size: 116, 116
+  orig: 136, 136
+  offset: 10, 10
+  index: -1
+xs_sz
+  rotate: false
+  xy: 2, 3
+  size: 226, 258
+  orig: 226, 258
+  offset: 0, 0
+  index: -1
+xs_sz_touYing
+  rotate: true
+  xy: 230, 130
+  size: 131, 146
+  orig: 139, 154
+  offset: 4, 4
+  index: -1

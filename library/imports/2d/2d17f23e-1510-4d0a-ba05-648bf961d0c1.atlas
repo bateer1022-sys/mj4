@@ -1,0 +1,195 @@
+
+gameplay_word.png
+size: 713,525
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+amazing
+  rotate: false
+  xy: 2, 332
+  size: 421, 103
+  orig: 422, 103
+  offset: 0, 0
+  index: -1
+excellent
+  rotate: false
+  xy: 2, 247
+  size: 441, 83
+  orig: 442, 84
+  offset: 0, 1
+  index: -1
+good
+  rotate: false
+  xy: 2, 73
+  size: 264, 86
+  orig: 265, 87
+  offset: 0, 1
+  index: -1
+great
+  rotate: false
+  xy: 2, 161
+  size: 290, 84
+  orig: 291, 85
+  offset: 0, 1
+  index: -1
+mj_7
+  rotate: false
+  xy: 631, 405
+  size: 41, 40
+  orig: 47, 46
+  offset: 3, 3
+  index: -1
+unbelievable
+  rotate: false
+  xy: 2, 437
+  size: 618, 86
+  orig: 619, 86
+  offset: 0, 0
+  index: -1
+xl_un/un0001
+  rotate: false
+  xy: 461, 86
+  size: 155, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0002
+  rotate: false
+  xy: 281, 47
+  size: 179, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0003
+  rotate: false
+  xy: 425, 398
+  size: 204, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0004
+  rotate: false
+  xy: 425, 359
+  size: 228, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0005
+  rotate: false
+  xy: 445, 281
+  size: 251, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0006
+  rotate: false
+  xy: 2, 34
+  size: 277, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0007
+  rotate: false
+  xy: 294, 203
+  size: 302, 37
+  orig: 305, 37
+  offset: 0, 0
+  index: -1
+xl_un/un0008
+  rotate: false
+  xy: 294, 164
+  size: 291, 37
+  orig: 305, 37
+  offset: 14, 0
+  index: -1
+xl_un/un0009
+  rotate: false
+  xy: 445, 320
+  size: 266, 37
+  orig: 305, 37
+  offset: 39, 0
+  index: -1
+xl_un/un0010
+  rotate: false
+  xy: 445, 242
+  size: 242, 37
+  orig: 305, 37
+  offset: 63, 0
+  index: -1
+xl_un/un0011
+  rotate: false
+  xy: 294, 125
+  size: 216, 37
+  orig: 305, 37
+  offset: 89, 0
+  index: -1
+xl_un/un0012
+  rotate: false
+  xy: 268, 86
+  size: 191, 37
+  orig: 305, 37
+  offset: 114, 0
+  index: -1
+xl_un/un0013
+  rotate: false
+  xy: 281, 8
+  size: 169, 37
+  orig: 305, 37
+  offset: 136, 0
+  index: -1
+xl_un/un0014
+  rotate: false
+  xy: 462, 47
+  size: 144, 37
+  orig: 305, 37
+  offset: 161, 0
+  index: -1
+xl_un/un0015
+  rotate: false
+  xy: 452, 8
+  size: 120, 37
+  orig: 305, 37
+  offset: 185, 0
+  index: -1
+xl_un/un0016
+  rotate: false
+  xy: 574, 8
+  size: 96, 37
+  orig: 305, 37
+  offset: 209, 0
+  index: -1
+xl_un/un0017
+  rotate: false
+  xy: 512, 125
+  size: 71, 37
+  orig: 305, 37
+  offset: 234, 0
+  index: -1
+yezi1
+  rotate: false
+  xy: 622, 447
+  size: 81, 76
+  orig: 81, 76
+  offset: 0, 0
+  index: -1
+yezi2
+  rotate: false
+  xy: 618, 87
+  size: 87, 58
+  orig: 87, 58
+  offset: 0, 0
+  index: -1
+yezi3
+  rotate: false
+  xy: 598, 147
+  size: 95, 93
+  orig: 200, 200
+  offset: 95, 11
+  index: -1
+zhuye
+  rotate: true
+  xy: 2, 2
+  size: 30, 57
+  orig: 30, 57
+  offset: 0, 0
+  index: -1

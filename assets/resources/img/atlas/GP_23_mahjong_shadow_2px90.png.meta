@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c07496cd-a622-45ac-9497-fb625ed79ed7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 321,
+  "height": 381,
+  "platformSettings": {},
+  "subMetas": {
+    "GP_23_mahjong_shadow_2px90": {
+      "ver": "1.0.6",
+      "uuid": "d262db44-1c43-4428-8bd3-9618a10621ca",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c07496cd-a622-45ac-9497-fb625ed79ed7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 321,
+      "height": 381,
+      "rawWidth": 321,
+      "rawHeight": 381,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

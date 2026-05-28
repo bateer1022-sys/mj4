@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GP_23_mahjong_shadow",
+    "texture": "96bcd535-ef53-4a36-9b2a-7e8741c88703",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      321,
+      381
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      321,
+      381
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
