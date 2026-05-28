@@ -93,6 +93,18 @@ function isValid(node: cc.Node): boolean {
     return node && cc.isValid(node);
 }
 
+/** 取 tween 缓动（playable 打包后部分 cc.easing 字符串会解析失败） */
+function getTweenEase(name: string): ((t: number) => number) | string {
+    const easing = cc.easing as { [key: string]: (t: number) => number } | undefined;
+    if (easing && typeof easing[name] === 'function') {
+        return easing[name];
+    }
+    if (easing && typeof easing.quadIn === 'function') {
+        return easing.quadIn;
+    }
+    return 'linear';
+}
+
 /** SHOW_ALL 下背景 cover 铺满可视区域（不含屏外黑边） */
 function layoutShowAllCover(node: cc.Node, canvas: cc.Node): void {
     if (!node || !isValid(node) || !canvas || !isValid(canvas)) {
@@ -1743,9 +1755,19 @@ export default class GameController extends cc.Component {
                 onDone();
                 return;
             }
-            this.scheduleOnce(() => {
-                this.animateTrayPairCollision(leftIdx, rightIdx, onDone);
-            }, TRAY_COLLISION_DELAY_AFTER_SWAP);
+            const delaySec = TRAY_COLLISION_DELAY_AFTER_SWAP;
+            if (typeof this.scheduleOnce === 'function') {
+                this.scheduleOnce(() => {
+                    this.animateTrayPairCollision(leftIdx, rightIdx, onDone);
+                }, delaySec);
+            } else {
+                setTimeout(() => {
+                    if (!cc.isValid(this.node)) {
+                        return;
+                    }
+                    this.animateTrayPairCollision(leftIdx, rightIdx, onDone);
+                }, delaySec * 1000);
+            }
         });
     }
 
@@ -1792,11 +1814,11 @@ export default class GameController extends cc.Component {
         };
         if (stateI) {
             pending += 1;
-            this.moveTrayStateToSlot(stateI, slotJ, TRAY_SWAP_DURATION, doneOne, 'cubicIn');
+            this.moveTrayStateToSlot(stateI, slotJ, TRAY_SWAP_DURATION, doneOne);
         }
         if (stateJ) {
             pending += 1;
-            this.moveTrayStateToSlot(stateJ, slotI, TRAY_SWAP_DURATION, doneOne, 'cubicIn');
+            this.moveTrayStateToSlot(stateJ, slotI, TRAY_SWAP_DURATION, doneOne);
         }
         if (pending === 0) {
             onDone();
@@ -1808,8 +1830,7 @@ export default class GameController extends cc.Component {
         state: TileState,
         slot: cc.Node,
         duration: number,
-        onDone: () => void,
-        easing = 'cubicIn'
+        onDone: () => void
     ): void {
         if (!state || !cc.isValid(state.node) || !slot || !cc.isValid(slot)) {
             onDone();
@@ -1824,7 +1845,7 @@ export default class GameController extends cc.Component {
         const targetScale = this.getScaleForSlot(n, slot);
         n.stopAllActions();
         cc.tween(n)
-            .to(duration, { position: targetLocal, scale: targetScale }, { easing })
+            .to(duration, { position: targetLocal, scale: targetScale }, { easing: getTweenEase('quadIn') })
             .call(() => {
                 if (!cc.isValid(n)) {
                     onDone();
@@ -1887,7 +1908,7 @@ export default class GameController extends cc.Component {
             [leftNode, rightNode].forEach((n) => {
                 n.stopAllActions();
                 cc.tween(n)
-                    .to(0.09, { scale: 0 }, { easing: 'quartIn' })
+                    .to(0.09, { scale: 0 }, { easing: getTweenEase('quartIn') })
                     .call(() => {
                         if (cc.isValid(n)) {
                             n.destroy();
@@ -1901,13 +1922,13 @@ export default class GameController extends cc.Component {
         leftNode.stopAllActions();
         rightNode.stopAllActions();
         cc.tween(leftNode)
-            .to(TRAY_ELIM_OUT_DURATION, { position: outLeft }, { easing: 'quadIn' })
-            .to(TRAY_ELIM_IN_DURATION, { position: center }, { easing: 'quartIn' })
+            .to(TRAY_ELIM_OUT_DURATION, { position: outLeft }, { easing: getTweenEase('quadIn') })
+            .to(TRAY_ELIM_IN_DURATION, { position: center }, { easing: getTweenEase('quartIn') })
             .call(onMeet)
             .start();
         cc.tween(rightNode)
-            .to(TRAY_ELIM_OUT_DURATION, { position: outRight }, { easing: 'quadIn' })
-            .to(TRAY_ELIM_IN_DURATION, { position: center }, { easing: 'quartIn' })
+            .to(TRAY_ELIM_OUT_DURATION, { position: outRight }, { easing: getTweenEase('quadIn') })
+            .to(TRAY_ELIM_IN_DURATION, { position: center }, { easing: getTweenEase('quartIn') })
             .call(onMeet)
             .start();
     }
