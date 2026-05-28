@@ -530,8 +530,8 @@
     "relativePath": "resources/img/atlas"
   },
   "a9e6a9d1-b62e-45e5-95a2-184465be4b9b": {
-    "asset": 1779961053267,
-    "meta": 1779961053271,
+    "asset": 1779971767807,
+    "meta": 1779971767812,
     "relativePath": "resources/mj.prefab"
   },
   "801dcc47-4b86-4d96-9595-e0e4cb07ad98": {
@@ -745,8 +745,8 @@
     "relativePath": "resources/img/bg.jpeg"
   },
   "0a25e1e5-c1ce-4802-9342-038577b360ea": {
-    "asset": 1779969919140,
-    "meta": 1779969919142,
+    "asset": 1779973430306,
+    "meta": 1779973430310,
     "relativePath": " main.fire"
   },
   "5eecb3e6-f67e-4e58-baeb-1e1eb4199747": {
@@ -768,11 +768,6 @@
     "asset": 1779939176000,
     "meta": 1779967998802,
     "relativePath": "resources/spine/gameplay_hint.png"
-  },
-  "4f421b98-7acb-49f8-a702-83978f0f98d1": {
-    "asset": 1779938972000,
-    "meta": 1779967998803,
-    "relativePath": "resources/img/atlas/flash_logo.png"
   },
   "782fee9c-8ef1-420a-82d3-437aeef559b7": {
     "asset": 1779939176000,
@@ -804,9 +799,24 @@
     "meta": 1779967998820,
     "relativePath": "resources/spine/Huanhu.png"
   },
+  "3b106b37-5138-49b0-93f2-65ad7669e3e6": {
+    "asset": 1779941430000,
+    "meta": 1779970273328,
+    "relativePath": "resources/img/atlas/flash_logo2.png"
+  },
+  "bce4a95b-6bf4-45b5-ad20-a2ad9848bddf": {
+    "asset": 1779971614314,
+    "meta": 1779971614314,
+    "relativePath": "resources/animation"
+  },
+  "462d6290-2cfd-41e4-bd6b-cc09fb609163": {
+    "asset": 1779971696671,
+    "meta": 1779971696674,
+    "relativePath": "resources/animation/mj_spf.anim"
+  },
   "e216a59c-01ce-4b59-9f89-28523ac7a24d": {
-    "asset": 1779968907654,
-    "meta": 1779969109500,
+    "asset": 1779973186873,
+    "meta": 1779973188366,
     "relativePath": "script/main.ts"
   }
 }

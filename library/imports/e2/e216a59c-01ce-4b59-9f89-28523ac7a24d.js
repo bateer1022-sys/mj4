@@ -34,6 +34,21 @@ var super_html_playable_1 = require("./super_html_playable");
 var ccclass = cc._decorator.ccclass;
 /** 随机牌面 key 集合 */
 var MJ_FACE_KEYS = ['w1', 't1', 'b1', 'w5', 't5', 'b5', 'Z_bei', 'b9', 'Z_zhong', 't8'];
+/** 牌面 key 对应 mj 预制体 icon 上 mj_spf 动画的帧序号 */
+var MJ_FACE_ANIM_FRAME = {
+    w1: 6,
+    t1: 3,
+    b1: 0,
+    w5: 7,
+    t5: 4,
+    b5: 1,
+    Z_bei: 8,
+    b9: 2,
+    Z_zhong: 9,
+    t8: 5,
+};
+/** icon 牌面动画资源路径 */
+var MJ_ICON_ANIM_PATH = 'animation/mj_spf';
 /** 无消除后再次引导的间隔秒数 */
 var GUIDE_IDLE_SECONDS = 3;
 /** 托盘内交换相邻麻将的时长（秒） */
@@ -92,15 +107,19 @@ var SHADOW_OFFSET_X = 0;
 /** 阴影 Y 偏移（像素） */
 var SHADOW_OFFSET_Y = 0;
 /** 阴影 X 缩放 */
-var SHADOW_SCALE_X = 1.05;
+var SHADOW_SCALE_X = 1;
 /** 阴影 Y 缩放 */
-var SHADOW_SCALE_Y = 1.05;
+var SHADOW_SCALE_Y = 1;
 /** 阴影透明度（0-255） */
 var SHADOW_OPACITY = 185;
 /** 麻将水平间距系数（1=刚好相接） */
 var TILE_PAD_X = 0.94;
 /** 麻将垂直间距系数（1=刚好相接） */
 var TILE_PAD_Y = 0.94;
+/** 每高一层相对底层的水平像素偏移 */
+var LAYER_STACK_OFFSET_X = -18;
+/** 每高一层相对底层的垂直像素偏移 */
+var LAYER_STACK_OFFSET_Y = 25;
 function isValid(node) {
     return node && cc.isValid(node);
 }
@@ -131,7 +150,7 @@ var GameController = /** @class */ (function (_super) {
     function GameController() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.boardRoot = null;
-        _this.faceFrames = {};
+        _this.mjIconClip = null;
         _this.shadowFrame = null;
         _this.banFrame = null;
         _this.tileScale = 1;
@@ -144,8 +163,6 @@ var GameController = /** @class */ (function (_super) {
         _this.boardMinY = 0;
         _this.boardMaxX = 0;
         _this.boardMaxY = 0;
-        _this.boardStepX = 0;
-        _this.boardStepY = 0;
         _this.allTiles = [];
         _this.slotNodes = [];
         _this.tray = [null, null, null, null];
@@ -176,7 +193,6 @@ var GameController = /** @class */ (function (_super) {
         _this.wordLastFinalTriggerCount = 0;
         _this.comboSounds = [];
         _this.settlementShown = false;
-        _this.settlementVictoryNode = null;
         _this.settlementVictorySk = null;
         _this.settlementTaskLightSk = null;
         _this.settlementCountLabel = null;
@@ -229,9 +245,6 @@ var GameController = /** @class */ (function (_super) {
     GameController.prototype.downLoad = function () {
         super_html_playable_1.default.game_end();
         super_html_playable_1.default.download();
-    };
-    /** 游戏结束 */
-    GameController.prototype.gameEnd = function () {
     };
     /** 适配并铺满背景图 */
     GameController.prototype.layoutBackground = function () {
@@ -324,8 +337,8 @@ var GameController = /** @class */ (function (_super) {
         if (!endNode || !cc.isValid(endNode)) {
             return;
         }
-        this.settlementVictoryNode = endNode.getChildByName('victory');
-        this.settlementVictorySk = this.settlementVictoryNode ? this.settlementVictoryNode.getComponent(sp.Skeleton) : null;
+        var victoryNode = endNode.getChildByName('victory');
+        this.settlementVictorySk = victoryNode ? victoryNode.getComponent(sp.Skeleton) : null;
         var taskLightNode = endNode.getChildByName('TaskLight');
         this.settlementTaskLightSk = taskLightNode ? taskLightNode.getComponent(sp.Skeleton) : null;
         var endCountNode = taskLightNode ? taskLightNode.getChildByName('endCount') : null;
@@ -542,20 +555,24 @@ var GameController = /** @class */ (function (_super) {
             }
         });
     };
-    /** 加载牌面与相关资源，完成后构建牌盘 */
+    /** 加载牌面动画与相关资源，完成后构建牌盘 */
     GameController.prototype.loadFacesAndBuild = function () {
         var _this = this;
-        var pending = MJ_FACE_KEYS.length + 2;
-        MJ_FACE_KEYS.forEach(function (key) {
-            cc.resources.load("img/atlas/\u724C\u9762/" + key, cc.SpriteFrame, function (err, sf) {
-                if (!err && sf) {
-                    _this.faceFrames[key] = sf;
-                }
-                pending -= 1;
-                if (pending <= 0) {
-                    _this.buildMahjongBoard();
-                }
-            });
+        var pending = 3;
+        var onOneLoaded = function () {
+            pending -= 1;
+            if (pending <= 0) {
+                _this.buildMahjongBoard();
+            }
+        };
+        cc.resources.load(MJ_ICON_ANIM_PATH, cc.AnimationClip, function (err, clip) {
+            if (!err && clip) {
+                _this.mjIconClip = clip;
+            }
+            else {
+                cc.warn('[GameController] mj icon 动画加载失败', MJ_ICON_ANIM_PATH, err);
+            }
+            onOneLoaded();
         });
         cc.resources.load('img/atlas/shadow', cc.SpriteFrame, function (err, sf) {
             if (!err && sf) {
@@ -564,10 +581,7 @@ var GameController = /** @class */ (function (_super) {
             else {
                 cc.warn('[GameController] 阴影图加载失败，回退到 prefab di', err);
             }
-            pending -= 1;
-            if (pending <= 0) {
-                _this.buildMahjongBoard();
-            }
+            onOneLoaded();
         });
         cc.resources.load('img/atlas/gameplay_ban', cc.SpriteFrame, function (err, sf) {
             if (!err && sf) {
@@ -576,10 +590,7 @@ var GameController = /** @class */ (function (_super) {
             else {
                 cc.warn('[GameController] 锁提示图加载失败', err);
             }
-            pending -= 1;
-            if (pending <= 0) {
-                _this.buildMahjongBoard();
-            }
+            onOneLoaded();
         });
     };
     /** 重建整局麻将（层、牌、状态） */
@@ -618,8 +629,6 @@ var GameController = /** @class */ (function (_super) {
                 return;
             }
             var _a = _this.measureTileStep(prefab), stepX = _a.stepX, stepY = _a.stepY;
-            _this.boardStepX = stepX;
-            _this.boardStepY = stepY;
             var layout = _this.getReferenceLayoutUnits();
             _this.prepareBoardFaceKeys(layout);
             var layer1Shadow = _this.createLayer('layer_1_shadow', 0);
@@ -627,19 +636,17 @@ var GameController = /** @class */ (function (_super) {
             _this.spawnByUnits(layer1, layer1Shadow, prefab, layout.layer1, stepX, stepY, 0, 1);
             var layer2Shadow = _this.createLayer('layer_2_shadow', 100);
             var layer2 = _this.createLayer('layer_2', 101);
-            _this.spawnByUnits(layer2, layer2Shadow, prefab, layout.layer2, stepX, stepY, 100, 2, 0, 0.38);
+            _this.spawnByUnits(layer2, layer2Shadow, prefab, layout.layer2, stepX, stepY, 100, 2, LAYER_STACK_OFFSET_X, LAYER_STACK_OFFSET_Y);
             var layer3Shadow = _this.createLayer('layer_3_shadow', 200);
             var layer3 = _this.createLayer('layer_3', 201);
-            _this.spawnByUnits(layer3, layer3Shadow, prefab, layout.layer3, stepX, stepY, 200, 3, 0, 0.72);
-            cc.log('[GameController] 麻将已生成', layout.layer1.length, layout.layer2.length, layout.layer3.length);
+            _this.spawnByUnits(layer3, layer3Shadow, prefab, layout.layer3, stepX, stepY, 200, 3, LAYER_STACK_OFFSET_X * 2, LAYER_STACK_OFFSET_Y * 2);
             _this.cacheBoardBounds();
             _this.fitBoardToScreen();
             _this.tryShowGuideHint(true);
             _this.markStartupReady(LOADING_KEY_BOARD);
         });
     };
-    /** 只按牌本体尺寸算步长（不含阴影），让牌与牌自然挨着 */
-    /** 测量麻将步长用于网格排布 */
+    /** 测量麻将步长用于网格排布（不含阴影） */
     GameController.prototype.measureTileStep = function (prefab) {
         var sample = cc.instantiate(prefab);
         sample.setScale(this.tileScale);
@@ -658,7 +665,6 @@ var GameController = /** @class */ (function (_super) {
         layer.zIndex = zIndex;
         return layer;
     };
-    /** 参照示意图的上中下堆叠 + 中空结构 */
     /** 返回三层麻将参考布局坐标 */
     GameController.prototype.getReferenceLayoutUnits = function () {
         var make = function (source) {
@@ -846,31 +852,27 @@ var GameController = /** @class */ (function (_super) {
         return key;
     };
     /** 按坐标批量生成一层麻将 */
-    GameController.prototype.spawnByUnits = function (parent, shadowParent, prefab, units, stepX, stepY, zBase, layerOrder, offsetXUnits, offsetYUnits) {
+    GameController.prototype.spawnByUnits = function (parent, shadowParent, prefab, units, stepX, stepY, zBase, layerOrder, offsetXPx, offsetYPx) {
         var _this = this;
-        if (offsetXUnits === void 0) { offsetXUnits = 0; }
-        if (offsetYUnits === void 0) { offsetYUnits = 0; }
+        if (offsetXPx === void 0) { offsetXPx = 0; }
+        if (offsetYPx === void 0) { offsetYPx = 0; }
         // 同一层渲染顺序：按右下方向递增，确保右下角 zIndex 最高
         var ordered = units.slice().sort(function (a, b) {
-            var ax = a.x + offsetXUnits;
-            var ay = a.y + offsetYUnits;
-            var bx = b.x + offsetXUnits;
-            var by = b.y + offsetYUnits;
-            var aKey = ax - ay;
-            var bKey = bx - by;
+            var aKey = a.x - a.y;
+            var bKey = b.x - b.y;
             if (Math.abs(aKey - bKey) > 0.0001) {
                 return aKey - bKey;
             }
-            if (Math.abs(ay - by) > 0.0001) {
-                return by - ay;
+            if (Math.abs(a.y - b.y) > 0.0001) {
+                return b.y - a.y;
             }
-            return ax - bx;
+            return a.x - b.x;
         });
         ordered.forEach(function (u, idx) {
-            var gridX = u.x + offsetXUnits;
-            var gridY = u.y + offsetYUnits;
-            var x = gridX * stepX;
-            var y = gridY * stepY + _this.layer1CenterY;
+            var gridX = u.x;
+            var gridY = u.y;
+            var x = gridX * stepX + offsetXPx;
+            var y = gridY * stepY + _this.layer1CenterY + offsetYPx;
             var faceKey = _this.takeBoardFaceKey();
             if (faceKey === null) {
                 return;
@@ -1140,14 +1142,12 @@ var GameController = /** @class */ (function (_super) {
         var above = this.getBlockingAbove(state);
         if (above.length > 0) {
             this.shakeNodes(__spreadArrays([state], above));
-            cc.log('不能点击：上层有麻将');
             return;
         }
         var side = this.getSideNeighbors(state);
         if (side.left && side.right) {
             this.shakeNodes([state, side.left, side.right]);
             this.showBanHints(state.node);
-            cc.log('不能点击：左右都被挡住');
             return;
         }
         this.moveToTray(state);
@@ -1541,7 +1541,6 @@ var GameController = /** @class */ (function (_super) {
         }
         var slotIdx = this.tray.findIndex(function (s) { return s === null; });
         if (slotIdx < 0 || !this.slotNodes[slotIdx]) {
-            cc.log('上方格子已满');
             return;
         }
         var slot = this.slotNodes[slotIdx];
@@ -1622,14 +1621,14 @@ var GameController = /** @class */ (function (_super) {
         if (!endNode || !cc.isValid(endNode)) {
             return;
         }
-        this.slotNodes.forEach(function (slot) {
-            if (slot && cc.isValid(slot)) {
-                slot.active = false;
-            }
-        });
-        if (this.boardRoot && cc.isValid(this.boardRoot)) {
-            this.boardRoot.active = false;
-        }
+        // this.slotNodes.forEach((slot) => {
+        //     if (slot && cc.isValid(slot)) {
+        //         slot.active = false;
+        //     }
+        // });
+        // if (this.boardRoot && cc.isValid(this.boardRoot)) {
+        //     this.boardRoot.active = false;
+        // }
         (_a = this.countLabel) === null || _a === void 0 ? void 0 : _a.node.active = false;
         endNode.active = true;
         endNode.setSiblingIndex(this.node.childrenCount - 1);
@@ -1939,21 +1938,47 @@ var GameController = /** @class */ (function (_super) {
         spr.sizeMode = cc.Sprite.SizeMode.CUSTOM;
         return shadowNode;
     };
-    /** 将指定牌面贴图应用到麻将 */
+    /** 通过 icon 上 mj_spf 动画切帧显示牌面 */
     GameController.prototype.applyFace = function (node, faceKey) {
         var key = faceKey || MJ_FACE_KEYS[0];
-        var sf = this.faceFrames[key];
         var icon = node.getChildByName('icon');
         if (!icon) {
             return key;
         }
         icon.active = true;
-        if (sf) {
-            var spr = icon.getComponent(cc.Sprite);
-            if (spr) {
-                spr.spriteFrame = sf;
-                spr.sizeMode = cc.Sprite.SizeMode.TRIMMED;
-            }
+        var frameIndex = MJ_FACE_ANIM_FRAME[key];
+        if (frameIndex === undefined) {
+            cc.warn('[GameController] 未配置牌面动画帧', key);
+            return key;
+        }
+        var anim = icon.getComponent(cc.Animation);
+        if (!anim) {
+            cc.warn('[GameController] icon 缺少 Animation 组件');
+            return key;
+        }
+        var clip = this.mjIconClip || anim.defaultClip;
+        if (!clip) {
+            cc.warn('[GameController] 未找到 mj_spf 动画');
+            return key;
+        }
+        var clipName = clip.name;
+        var clips = anim.getClips();
+        if (clips.indexOf(clip) < 0) {
+            anim.addClip(clip);
+        }
+        var state = anim.play(clipName);
+        if (!state) {
+            return key;
+        }
+        state.wrapMode = cc.WrapMode.Normal;
+        state.repeatCount = 1;
+        state.time = frameIndex;
+        state.sample();
+        if (typeof state.pause === 'function') {
+            state.pause();
+        }
+        else {
+            state.speed = 0;
         }
         return key;
     };

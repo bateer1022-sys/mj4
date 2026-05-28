@@ -24,13 +24,13 @@
         "__id__": 5
       },
       {
-        "__id__": 8
+        "__id__": 9
       }
     ],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 11
+      "__id__": 12
     },
     "_opacity": 255,
     "_color": {
@@ -198,10 +198,13 @@
     "_components": [
       {
         "__id__": 6
+      },
+      {
+        "__id__": 7
       }
     ],
     "_prefab": {
-      "__id__": 7
+      "__id__": 8
     },
     "_opacity": 255,
     "_color": {
@@ -213,8 +216,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 114,
-      "height": 115
+      "width": 189,
+      "height": 237
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -225,8 +228,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -3,
-        7,
+        -7.302,
+        11,
         0,
         0,
         0,
@@ -269,7 +272,7 @@
       "__uuid__": "a9c8ce35-56eb-4f14-84dc-bd0ab74049d9"
     },
     "_type": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 2,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -278,8 +281,27 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "462d6290-2cfd-41e4-bd6b-cc09fb609163"
+    },
+    "_clips": [
+      {
+        "__uuid__": "462d6290-2cfd-41e4-bd6b-cc09fb609163"
+      }
+    ],
+    "playOnLoad": false,
     "_id": ""
   },
   {
@@ -304,11 +326,11 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 9
+        "__id__": 10
       }
     ],
     "_prefab": {
-      "__id__": 10
+      "__id__": 11
     },
     "_opacity": 255,
     "_color": {
@@ -362,7 +384,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 8
+      "__id__": 9
     },
     "_enabled": true,
     "_materials": [

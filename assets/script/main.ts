@@ -3,7 +3,22 @@ import super_html_playable from './super_html_playable';
 const { ccclass } = cc._decorator;
 
 /** 随机牌面 key 集合 */
-const MJ_FACE_KEYS = ['w1', 't1', 'b1', 'w5', 't5', 'b5', 'Z_bei','b9', 'Z_zhong', 't8'];
+const MJ_FACE_KEYS = ['w1', 't1', 'b1', 'w5', 't5', 'b5', 'Z_bei', 'b9', 'Z_zhong', 't8'];
+/** 牌面 key 对应 mj 预制体 icon 上 mj_spf 动画的帧序号 */
+const MJ_FACE_ANIM_FRAME: Record<string, number> = {
+    w1: 6,
+    t1: 3,
+    b1: 0,
+    w5: 7,
+    t5: 4,
+    b5: 1,
+    Z_bei: 8,
+    b9: 2,
+    Z_zhong: 9,
+    t8: 5,
+};
+/** icon 牌面动画资源路径 */
+const MJ_ICON_ANIM_PATH = 'animation/mj_spf';
 /** 无消除后再次引导的间隔秒数 */
 const GUIDE_IDLE_SECONDS = 3;
 /** 托盘内交换相邻麻将的时长（秒） */
@@ -62,15 +77,19 @@ const SHADOW_OFFSET_X = 0;
 /** 阴影 Y 偏移（像素） */
 const SHADOW_OFFSET_Y = 0;
 /** 阴影 X 缩放 */
-const SHADOW_SCALE_X = 1.05;
+const SHADOW_SCALE_X = 1;
 /** 阴影 Y 缩放 */
-const SHADOW_SCALE_Y = 1.05;
+const SHADOW_SCALE_Y = 1;
 /** 阴影透明度（0-255） */
 const SHADOW_OPACITY = 185;
 /** 麻将水平间距系数（1=刚好相接） */
 const TILE_PAD_X = 0.94;
 /** 麻将垂直间距系数（1=刚好相接） */
 const TILE_PAD_Y = 0.94;
+/** 每高一层相对底层的水平像素偏移 */
+const LAYER_STACK_OFFSET_X = -18;
+/** 每高一层相对底层的垂直像素偏移 */
+const LAYER_STACK_OFFSET_Y = 25;
 
 interface GridUnit {
     x: number;
@@ -127,7 +146,7 @@ function layoutShowAllCover(node: cc.Node, canvas: cc.Node): void {
 export default class GameController extends cc.Component {
 
     private boardRoot: cc.Node = null;
-    private faceFrames: { [key: string]: cc.SpriteFrame } = {};
+    private mjIconClip: cc.AnimationClip = null;
     private shadowFrame: cc.SpriteFrame = null;
     private banFrame: cc.SpriteFrame = null;
     private tileScale = 1;
@@ -140,8 +159,6 @@ export default class GameController extends cc.Component {
     private boardMinY = 0;
     private boardMaxX = 0;
     private boardMaxY = 0;
-    private boardStepX = 0;
-    private boardStepY = 0;
     private allTiles: TileState[] = [];
     private slotNodes: cc.Node[] = [];
     private tray: Array<TileState | null> = [null, null, null, null];
@@ -172,7 +189,6 @@ export default class GameController extends cc.Component {
     private wordLastFinalTriggerCount = 0;
     private comboSounds: Array<cc.AudioClip | null> = [];
     private settlementShown = false;
-    private settlementVictoryNode: cc.Node = null;
     private settlementVictorySk: sp.Skeleton = null;
     private settlementTaskLightSk: sp.Skeleton = null;
     private settlementCountLabel: cc.Label = null;
@@ -228,13 +244,9 @@ export default class GameController extends cc.Component {
     }
 
     /** 下载 */
-    public  downLoad() {
+    public downLoad(): void {
         super_html_playable.game_end();
         super_html_playable.download();
-    }
-    
-    /** 游戏结束 */
-    public gameEnd() {
     }
 
     /** 适配并铺满背景图 */
@@ -336,8 +348,8 @@ export default class GameController extends cc.Component {
         if (!endNode || !cc.isValid(endNode)) {
             return;
         }
-        this.settlementVictoryNode = endNode.getChildByName('victory');
-        this.settlementVictorySk = this.settlementVictoryNode ? this.settlementVictoryNode.getComponent(sp.Skeleton) : null;
+        const victoryNode = endNode.getChildByName('victory');
+        this.settlementVictorySk = victoryNode ? victoryNode.getComponent(sp.Skeleton) : null;
         const taskLightNode = endNode.getChildByName('TaskLight');
         this.settlementTaskLightSk = taskLightNode ? taskLightNode.getComponent(sp.Skeleton) : null;
         const endCountNode = taskLightNode ? taskLightNode.getChildByName('endCount') : null;
@@ -561,19 +573,22 @@ export default class GameController extends cc.Component {
         });
     }
 
-    /** 加载牌面与相关资源，完成后构建牌盘 */
+    /** 加载牌面动画与相关资源，完成后构建牌盘 */
     private loadFacesAndBuild(): void {
-        let pending = MJ_FACE_KEYS.length + 2;
-        MJ_FACE_KEYS.forEach((key) => {
-            cc.resources.load(`img/atlas/牌面/${key}`, cc.SpriteFrame, (err, sf) => {
-                if (!err && sf) {
-                    this.faceFrames[key] = sf;
-                }
-                pending -= 1;
-                if (pending <= 0) {
-                    this.buildMahjongBoard();
-                }
-            });
+        let pending = 3;
+        const onOneLoaded = () => {
+            pending -= 1;
+            if (pending <= 0) {
+                this.buildMahjongBoard();
+            }
+        };
+        cc.resources.load(MJ_ICON_ANIM_PATH, cc.AnimationClip, (err, clip) => {
+            if (!err && clip) {
+                this.mjIconClip = clip;
+            } else {
+                cc.warn('[GameController] mj icon 动画加载失败', MJ_ICON_ANIM_PATH, err);
+            }
+            onOneLoaded();
         });
         cc.resources.load('img/atlas/shadow', cc.SpriteFrame, (err, sf) => {
             if (!err && sf) {
@@ -581,10 +596,7 @@ export default class GameController extends cc.Component {
             } else {
                 cc.warn('[GameController] 阴影图加载失败，回退到 prefab di', err);
             }
-            pending -= 1;
-            if (pending <= 0) {
-                this.buildMahjongBoard();
-            }
+            onOneLoaded();
         });
         cc.resources.load('img/atlas/gameplay_ban', cc.SpriteFrame, (err, sf) => {
             if (!err && sf) {
@@ -592,10 +604,7 @@ export default class GameController extends cc.Component {
             } else {
                 cc.warn('[GameController] 锁提示图加载失败', err);
             }
-            pending -= 1;
-            if (pending <= 0) {
-                this.buildMahjongBoard();
-            }
+            onOneLoaded();
         });
     }
 
@@ -636,8 +645,6 @@ export default class GameController extends cc.Component {
             }
 
             const { stepX, stepY } = this.measureTileStep(prefab);
-            this.boardStepX = stepX;
-            this.boardStepY = stepY;
             const layout = this.getReferenceLayoutUnits();
             this.prepareBoardFaceKeys(layout);
 
@@ -647,13 +654,18 @@ export default class GameController extends cc.Component {
 
             const layer2Shadow = this.createLayer('layer_2_shadow', 100);
             const layer2 = this.createLayer('layer_2', 101);
-            this.spawnByUnits(layer2, layer2Shadow, prefab, layout.layer2, stepX, stepY, 100, 2, 0, 0.38);
+            this.spawnByUnits(
+                layer2, layer2Shadow, prefab, layout.layer2, stepX, stepY, 100, 2,
+                LAYER_STACK_OFFSET_X, LAYER_STACK_OFFSET_Y
+            );
 
             const layer3Shadow = this.createLayer('layer_3_shadow', 200);
             const layer3 = this.createLayer('layer_3', 201);
-            this.spawnByUnits(layer3, layer3Shadow, prefab, layout.layer3, stepX, stepY, 200, 3, 0, 0.72);
+            this.spawnByUnits(
+                layer3, layer3Shadow, prefab, layout.layer3, stepX, stepY, 200, 3,
+                LAYER_STACK_OFFSET_X * 2, LAYER_STACK_OFFSET_Y * 2
+            );
 
-            cc.log('[GameController] 麻将已生成', layout.layer1.length, layout.layer2.length, layout.layer3.length);
             this.cacheBoardBounds();
             this.fitBoardToScreen();
             this.tryShowGuideHint(true);
@@ -661,8 +673,7 @@ export default class GameController extends cc.Component {
         });
     }
 
-    /** 只按牌本体尺寸算步长（不含阴影），让牌与牌自然挨着 */
-    /** 测量麻将步长用于网格排布 */
+    /** 测量麻将步长用于网格排布（不含阴影） */
     private measureTileStep(prefab: cc.Prefab): { stepX: number; stepY: number } {
         const sample = cc.instantiate(prefab);
         sample.setScale(this.tileScale);
@@ -683,7 +694,6 @@ export default class GameController extends cc.Component {
         return layer;
     }
 
-    /** 参照示意图的上中下堆叠 + 中空结构 */
     /** 返回三层麻将参考布局坐标 */
     private getReferenceLayoutUnits(): { layer1: GridUnit[]; layer2: GridUnit[]; layer3: GridUnit[] } {
         const make = (source: number[][]): GridUnit[] => {
@@ -895,30 +905,26 @@ export default class GameController extends cc.Component {
         stepY: number,
         zBase: number,
         layerOrder: number,
-        offsetXUnits = 0,
-        offsetYUnits = 0
+        offsetXPx = 0,
+        offsetYPx = 0
     ): void {
         // 同一层渲染顺序：按右下方向递增，确保右下角 zIndex 最高
         const ordered = units.slice().sort((a, b) => {
-            const ax = a.x + offsetXUnits;
-            const ay = a.y + offsetYUnits;
-            const bx = b.x + offsetXUnits;
-            const by = b.y + offsetYUnits;
-            const aKey = ax - ay;
-            const bKey = bx - by;
+            const aKey = a.x - a.y;
+            const bKey = b.x - b.y;
             if (Math.abs(aKey - bKey) > 0.0001) {
                 return aKey - bKey;
             }
-            if (Math.abs(ay - by) > 0.0001) {
-                return by - ay;
+            if (Math.abs(a.y - b.y) > 0.0001) {
+                return b.y - a.y;
             }
-            return ax - bx;
+            return a.x - b.x;
         });
         ordered.forEach((u, idx) => {
-            const gridX = u.x + offsetXUnits;
-            const gridY = u.y + offsetYUnits;
-            const x = gridX * stepX;
-            const y = gridY * stepY + this.layer1CenterY;
+            const gridX = u.x;
+            const gridY = u.y;
+            const x = gridX * stepX + offsetXPx;
+            const y = gridY * stepY + this.layer1CenterY + offsetYPx;
             const faceKey = this.takeBoardFaceKey();
             if (faceKey === null) {
                 return;
@@ -1206,7 +1212,6 @@ export default class GameController extends cc.Component {
         const above = this.getBlockingAbove(state);
         if (above.length > 0) {
             this.shakeNodes([state, ...above]);
-            cc.log('不能点击：上层有麻将');
             return;
         }
 
@@ -1214,7 +1219,6 @@ export default class GameController extends cc.Component {
         if (side.left && side.right) {
             this.shakeNodes([state, side.left, side.right]);
             this.showBanHints(state.node);
-            cc.log('不能点击：左右都被挡住');
             return;
         }
         this.moveToTray(state);
@@ -1626,7 +1630,6 @@ export default class GameController extends cc.Component {
         }
         const slotIdx = this.tray.findIndex((s) => s === null);
         if (slotIdx < 0 || !this.slotNodes[slotIdx]) {
-            cc.log('上方格子已满');
             return;
         }
         const slot = this.slotNodes[slotIdx];
@@ -1709,14 +1712,14 @@ export default class GameController extends cc.Component {
         if (!endNode || !cc.isValid(endNode)) {
             return;
         }
-        this.slotNodes.forEach((slot) => {
-            if (slot && cc.isValid(slot)) {
-                slot.active = false;
-            }
-        });
-        if (this.boardRoot && cc.isValid(this.boardRoot)) {
-            this.boardRoot.active = false;
-        }
+        // this.slotNodes.forEach((slot) => {
+        //     if (slot && cc.isValid(slot)) {
+        //         slot.active = false;
+        //     }
+        // });
+        // if (this.boardRoot && cc.isValid(this.boardRoot)) {
+        //     this.boardRoot.active = false;
+        // }
         this.countLabel?.node.active = false;
         endNode.active = true;
         endNode.setSiblingIndex(this.node.childrenCount - 1);
@@ -2057,21 +2060,51 @@ export default class GameController extends cc.Component {
         return shadowNode;
     }
 
-    /** 将指定牌面贴图应用到麻将 */
+    /** 通过 icon 上 mj_spf 动画切帧显示牌面 */
     private applyFace(node: cc.Node, faceKey: string): string {
         const key = faceKey || MJ_FACE_KEYS[0];
-        const sf = this.faceFrames[key];
         const icon = node.getChildByName('icon');
         if (!icon) {
             return key;
         }
         icon.active = true;
-        if (sf) {
-            const spr = icon.getComponent(cc.Sprite);
-            if (spr) {
-                spr.spriteFrame = sf;
-                spr.sizeMode = cc.Sprite.SizeMode.TRIMMED;
-            }
+
+        const frameIndex = MJ_FACE_ANIM_FRAME[key];
+        if (frameIndex === undefined) {
+            cc.warn('[GameController] 未配置牌面动画帧', key);
+            return key;
+        }
+
+        const anim = icon.getComponent(cc.Animation);
+        if (!anim) {
+            cc.warn('[GameController] icon 缺少 Animation 组件');
+            return key;
+        }
+
+        const clip = this.mjIconClip || anim.defaultClip;
+        if (!clip) {
+            cc.warn('[GameController] 未找到 mj_spf 动画');
+            return key;
+        }
+
+        const clipName = clip.name;
+        const clips = anim.getClips();
+        if (clips.indexOf(clip) < 0) {
+            anim.addClip(clip);
+        }
+
+        const state = anim.play(clipName);
+        if (!state) {
+            return key;
+        }
+        state.wrapMode = cc.WrapMode.Normal;
+        state.repeatCount = 1;
+        state.time = frameIndex;
+        state.sample();
+        if (typeof state.pause === 'function') {
+            state.pause();
+        } else {
+            state.speed = 0;
         }
         return key;
     }
